@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*
+        Tudo que for em HTML (id = #) em CSS. É permitido apenas a um elementos
+        em HTML é (class = . ) em CSS. É permitido em diversos elementos
+*/
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(45, 52, 58);
+}
+h1#principal{
+    text-align: center;
+    
+    color: red;
+}
+h2{
+    color: dimgrey;
+}
+.basico{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;
+}
+.intermediario{
+    color: springgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.avancado{
+    color: royalblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.destaque{
+    background-color: rgb(148, 148, 0);
+}

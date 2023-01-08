@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/pequeno300-300px.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio700-700px.png" type="image/png">
+        <img src="imagens/grande1000-1000px.png" alt="foto.flexivel">
+    </picture>
+    <h1>Aprendendo a reproduzir audios em HTML5</h1>
+    <!--Primeira opção para reproduzir o áudio-->
+    <audio src="midia/Torcida-bahia.mp4" controls autoplay></audio>
+    <audio src="midia/Stay-Gold.mp3" controls autoplay></audio>
+    <!--Segunda opção para reproduzir o áudio-->
+    <audio preload="metadata" autoplay controls loop> <!--Auto quando abrir no navegador ele irá primeiramente carregar o arquivo todo | metadata irá carregar as informações primordialmente, só depois de dar o play que irá carregar a música em si | none não irá carregar nada inicialmente.-->
+        <source src="midia/Torcida-bahia.mp4" type="audio/mpeg"> <!--É o mais ideal pelo arquivo ser mais leve | A ordem também prevalece nessa situação, primeiramente tentará rodar tipo mpeg, caso não, tentar ogg, caso também não tentará rodar o wav, se ainda não for possível exibirá a mensagem "Seu navegador não suporta áudio." e exibirá um link para baixar o áudio -->
+        <source src="midia/Torcida-bahia.ogg" type="audio/ogg"> <!--É o mais ideal pelo arquivo ser mais leve-->
+        <source src="midia/Torcida-bahia.wav" type="audio/wav">
+        <p>Seu navegador não suporta áudio <a href="midia/Torcida-bahia.mp4" download="Torcida-bahia.mp4" type="audio/mpeg">Clique aqui para baixar o arquivo</a> </p>
+    </audio>
+</body>
+</html>

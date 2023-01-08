@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elemento
+            > = children/filho
+        */
+
+        body {
+            font-family: 'Cinzel Decorative';
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+
+            /*PSEUDOCLASSES é constituido por apenas 01 ":". São palavras que definem ESTADOS de ELEMENTOS dentro da HTML*/
+        }
+        a:visited {
+            color: goldenrod;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: goldenrod;
+        }
+            /*PSEUDOELEMENTOS é constituído por 02 "::" Eles podem agir nas classes, elementos, id's, que por definição, eles mechem diretamente no conteúdo periférico do elemento */
+            a::before{
+            content: '⇒ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+            }
+            a::after {
+            content: ' ⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+            .especial::before {
+                content: '∴ ';
+            }
+            .especial::after {
+                content: ' ∴';
+            }
+            .especial:hover {
+                background-image: linear-gradient(to left, rgb(40, 40, 40) , goldenrod);
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://google.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

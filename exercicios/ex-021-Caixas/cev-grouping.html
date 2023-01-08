@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: darkslategray;
+            margin: 0px;
+        }
+
+        header{
+            background-image: linear-gradient(to bottom, green, 33%, rgb(0, 36, 0));
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            box-shadow: 2px 2px 2px 3px rgba(0, 36, 0, 0.705);
+        }
+
+
+        nav{
+            background-color: whitesmoke;
+            padding: 7px;
+            text-align: center;
+            box-shadow: inset -3px -3px 5px 1px rgba(0, 0, 0, 0.445);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(0, 36, 0);
+            font-weight: bold;
+            padding: 4px 8px ;
+            margin-right: 5px;
+
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            padding: 13px;
+            background-color: rgb(0, 36, 0);
+            color: whitesmoke;
+            
+        }
+
+        main{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+        article{
+            background-color: whitesmoke;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(196, 193, 193);
+
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding:4px;
+            text-align: center;
+        }
+
+        footer > p{
+            margin: 0;
+        }
+
+        div#bola{
+            display: inline-block;
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            margin: 10px 10px 10px 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+   </header>
+   <main>
+        <section id="assunto">
+            <article>
+                <p>Esportes / Gastronimia / Tecnologia</p>
+                
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa possimus id dolores facilis a at, neque numquam similique non eveniet, cum temporibus quia voluptas deleniti? Accusantium, sit autem. Voluptates, reiciendis.</p>
+                <aside>
+                    <p>Artigo escrito por Ives Figueiredo</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>    
+        </section>
+        
+   </main>
+   <footer>
+        <p>&copy; Todos os direitos reservados a Ives Figueiredo</p>
+   </footer>
+
+   <div id="bola">
+
+   </div>
+</body>
+</html>
+
+<!--
+        box-shadow: Também segue uma hierarquia de ordem, onde a sintaxe É
+        
+        box-shadow: 1px 2px 3px 4px black;
+
+        Onde o 1px representa a sombra do lado direito do bloco (box)
+        O 2px representa a sombra inferior do bloco (box)
+        O 3px representa o blur da sombra 
+        O 4px representa o spread (espalhamento) da sombra em relação a caixa (box)
+        Já o "black" representa a coloração da sombra
+
+        Lembrando que os valores em negativo representa a direção oposta 
+        (Se positivo é lado direito, negativo a sombra se direciona para o lado esquerdo (oposto))
+        Se positivo é para cima, negativo é para baixo.
+
+        Para que a sombra fique para o lado interno da caixa (box), basta inserir o 'inset' antes dos valores em pixes (px)
+
+        box-shadow: inset 1px 2px 3px 4px black;
+-->
+
+<!--    Para criar formas em CSS, um exemplo abaixo, para criar uma circulo branco
+
+        div#bola{
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+-->

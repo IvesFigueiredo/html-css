@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas Baixadas</title>
+    <style>
+        @font-face {
+            font-family: 'california';
+            src: url('fontes/california.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Daniel Davis';
+            src: url('fontes/Daniel Davis.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+            /*
+                    Tipos de format()
+                    - opentype (otf)
+                    -truetype (ttf)
+                    -embedded-opentype
+                    -truetype-aat (Apple Advanced Typography)
+                    -svg
+            */
+        
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1{
+            font-family: 'california';
+            font-size: 2em;
+            font-weight: normal;
+        }
+        h2{
+            font-family: 'california';
+            font-size: 2em;
+            font-weight: normal;
+        }
+        p{
+            font-family: 'Daniel Davis';
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Incluindo fontes externas baixadas</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit neque, illum tempore inventore et quisquam sit facere laboriosam aliquid tempora natus ut dignissimos assumenda autem dicta? Id, pariatur veniam?</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi non sapiente sint dolores sequi. Magni animi maiores amet suscipit obcaecati non deleniti, est velit eveniet, blanditiis iure, odit et nesciunt.</p>
+</body>
+</html>
