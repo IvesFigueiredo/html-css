@@ -12,8 +12,10 @@ Projeto (Estudos) - ( https://ivesfigueiredo.github.io/linguagem/PP-Index.html )
 
 Lista de acessos aos desafios:
 
-Desafio 10 - Capítulo16 - ( ivesfigueiredo.github.io/html-css/0.desafios/desafio10-Cap.16/desafio10.html )
+Desafio 10 - Capítulo16 - ( https://ivesfigueiredo.github.io/html-css/0.desafios/desafio10-Cap.16/desafio10.html )
+
 Desafio 09 - Vídeos - ( https://ivesfigueiredo.github.io/html-css/0.desafios/desafio09-videos/des009.html )
+
 Desafio 07 - Imagem dinâmica - ( https://ivesfigueiredo.github.io/html-css/0.desafios/desafio07-imagem.dinamica/des007.html )
 
 Lista de acesso dos exercícios: (Ainda a ser atualizado)
