@@ -3,10 +3,6 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios
 
-Proxima etapa:
-
-1. Aprender JavaScript || C# || .NET || SQL || 
-
 Projetos próprio ainda em contrução:
 Projeto (Estudos) - ( https://ivesfigueiredo.github.io/linguagem/PP-Index.html )
 
@@ -20,6 +16,11 @@ Desafio 07 - Imagem dinâmica - ( https://ivesfigueiredo.github.io/html-css/0.de
 
 Lista de acesso dos exercícios: (Ainda a ser atualizado)
 
-Exercício 022 - Capítulo 19 - Imagem de fundo - ( https://ivesfigueiredo.github.io/html-css/exercicios/ex-022-imagem-fundo/fundo001.html )
+Exercício 022 - Capítulo 19 - Imagem de fundo - ( https://ivesfigueiredo.github.io/html-css/exercicios/ex-022-imagem-fundo/fundo006.html ) 
+                                                ( https://ivesfigueiredo.github.io/html-css/exercicios/ex-022-imagem-fundo/fundo001.html )
                                                 ( https://ivesfigueiredo.github.io/html-css/exercicios/ex-022-imagem-fundo/fundo002.html )
                                                 ( https://ivesfigueiredo.github.io/html-css/exercicios/ex-022-imagem-fundo/fundo003.html )
+
+Proxima etapa:
+
+1. Aprender JavaScript || C# || .NET || SQL || 
