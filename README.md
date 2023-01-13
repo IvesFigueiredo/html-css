@@ -6,6 +6,8 @@ Estou aprendendo a criar sites e agora vou gerenciar meus repositórios
 Projetos próprio ainda em contrução:
 Projeto (Estudos) - ( https://ivesfigueiredo.github.io/linguagem/PP-Index.html )
 
+Projeto Cordel: ( https://ivesfigueiredo.github.io/projeto-cordel/ )
+
 Lista de acessos aos desafios:
 
 Desafio 10 - Capítulo16 - ( https://ivesfigueiredo.github.io/html-css/0.desafios/desafio10-Cap.16/desafio10.html )
