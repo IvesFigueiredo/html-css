@@ -34,6 +34,21 @@
             padding: 10px;
         }
 
+        tbody > tr:nth-child(odd) {
+            background-color: white; 
+        }
+        tbody > tr:nth-child(even) { 
+            background-color: lightgray;    /* Fazer com que em duas em duas linhas tenha um background lightgray.
+            Há também como pintar uma linha e pular 2, utilizando o :nth-child(3n) | E assim consecutivamente.
+
+            Há outras formas, como; :nth-child(odd) - será para linhas impares, ou
+                                    :nth-child(2n-1) - Também para linhas impares. ||
+                                    :nth-child(even) - Para linhas pares, ou
+                                    :nth-child(2n) - Também para linhas pares.
+            
+            */
+        }
+
         .numero {
             text-align: right;
         }
