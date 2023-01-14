@@ -15,7 +15,7 @@
             width: 300px;
         }
 
-        tr{
+        td{
             border: 1px solid black;
             padding: 10px;
             text-align: center;
@@ -26,29 +26,31 @@
     <h1>Mesclagem de Células</h1>
     <table>
         <tr>
+            <!--Para mesclagem de células há duas formas || Mesclagem de Colunas e Mesclagem de Linhas
+            
+                Para mesclar células de coluna, basta atribuir uma propriedade "colspan" e o valor que é o número de células, exemplo; <td colspan="2>B</td>" para "B" mesclar duas colunas.
+                
+                Para mesclar céluas de linhas, basta também atribuir a propriedade "rowspan" e o número de células, exemplo; 
+                <td rowspan="3">F</td> para mesclar 3 linhas. 
+            -->
             <td>A</td>
-            <td>B</td>
-            <td>C</td>
+            <td colspan="2">B</td>
+            
         </tr>
         <tr>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
+            <td colspan="2">D</td>
+            
+            <td rowspan="3">F</td>
         </tr>
         <tr>
-            <td>G</td>
+            <td rowspan="2">G</td>
             <td>H</td>
-            <td>I</td>
+            
         </tr>
         <tr>
-            <td>J</td>
+            
             <td>L</td>
-            <td>M</td>
-        </tr>
-
-        <tr>
-            <td>Rio de Janeiro</td>
-            <td class="numero">16 615 526</td>
+            
         </tr>
     </table>
 </body>
