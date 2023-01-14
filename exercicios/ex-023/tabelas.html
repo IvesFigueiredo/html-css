@@ -5,10 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas - HTML</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: separate; /*Para juntar as bordas das células da tabela*/
+            border: 5px solid blue;
+            margin: 20px 0px;
+        }
+
+        /*table.tabela02 {
+            position: absolute;
+            right: 20px;
+            top: 60px;
+        } */
+
+        tr.linha {
+            background-color: gray;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td.especial {
+            background-color: yellow;
+        }
+
+    </style>
 </head>
+                    <!-- Não devemos usar tabelas para criar a estrutura de um site-->
 <body>
-    /*   Não devemos usar tabelas para criar a estrutura de um site*/
-
-
+    <h1>Minha primeira tabela</h1>
+    <!--
+        Todas as tabelas seguem esta hierarquia (SIMPLES):
+        1- TABLE = tabela
+            -TABLE ROW <tr>...</tr> = linha de tabela
+                -TABLE HEADER = cabeçalho de tabela
+                -TABLE DATA <td>...</td> = dado de tabela
+    -->
+    <table>
+        <tr> <!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td class="especial">B2</td>
+            <TD>C2</TD>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="linha">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td class="especial">A5</td>
+            <td>B5</td>
+            <td>C5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+            <td>B6</td>
+        </tr>
+        <tr>
+            <td>A7</td>
+            <td></td>
+            <td>C7</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>C8</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>C9</td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="tabela02">
+        <tr> <!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <TD>C2</TD>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="especial">C3</td>
+        </tr> 
+    </table>
 </body>
 </html>
