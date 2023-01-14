@@ -15,8 +15,17 @@
             border-collapse: separate;
         }
 
+        caption {
+            border: 1px solid black;
+            background-color: lightgray;
+            background-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(76, 76, 76);
             color: white;
         }
 
@@ -37,18 +46,26 @@
     <!--
        ANATOMIA PARA TABELAS GRANDES
        TABLE
+            CAPITION - LEGENDA DA TABELA
             THEAD
                 TR, TD, TH
             TBODY
                 TR, TD, TH
             TFOOT
                 TR, TD, TH
+
+            SCOPE - É importante para que bancos de pesquisa, façam as buscas corretamente. Onde;
+            scope="col" - É para títulos onde os dados se localização em colunas.
+            scope="row" - É para títulos onde os dados se localizão na mesma linha.
+            
+            É possível também atribuir uma propriedade diretamente no HTML de um elemento, exemplo; o style="width: 100px;" | Dentro do <th> da população.
     -->
     <table>
+        <caption>População das Unidades Federativa do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th> <!--TH - porque é um título-->
-                <th>População (2022)</th>
+                <th scope="col">Estado</th> <!--TH - porque é um título-->
+                <th scope="col" style="width: 100px;">População (2022)</th>
             </tr>
         </thead>
         <tbody>
@@ -163,7 +180,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>207 883 669</strong></td>
             </tr>
         </tfoot>
