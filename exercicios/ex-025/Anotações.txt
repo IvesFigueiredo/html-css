@@ -1,0 +1,22 @@
+Formulário:
+
+Exercício 025 (27/01/2023)
+
+Propriedades do "form";
+- Action é uma propriedade para se ter uma ação, geralmente utilizada em formulário (form), atrelado ao submit, para cadastros por exemplo, irá enviar para um determinado local. Lembrando que o processo depende de uma terceira linguagem, como ASP, PHP ou JAVA servidor.
+
+- Autocomplete="on/off" é uma propriedade que habilita ou desabilita a função do autocomplemento do palavra no input tipo texto (type="text")
+
+_________________________________________________________________________________
+
+Diferença entre "name" e o "id" numa sintáxe de formulário, exemplo;
+        <input type="text" name="nome" id="nome">
+    
+    A utilização do "name" é para plataforma HTML e PHP
+    Já a utilização do "id" é para a plataforma JavaScript e o uso do Label
+_________________________________________________________________________________
+
+O que é Label?
+
+Label é uma etiqueta, que tem como seu trabalho interligar (associar) um determinado input com o valor inputado, onde os valores deles sejam associados. Sua sintáxe, com exemplo "Nome:".:
+        <label for="VALOR-DO-ID-ATRELADO-AO-(Nome)">Nome:</label>
