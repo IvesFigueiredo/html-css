@@ -5,7 +5,7 @@ Exercício 025 (27/01/2023)
 Propriedades do "form";
 - Action é uma propriedade para se ter uma ação, geralmente utilizada em formulário (form), atrelado ao submit, para cadastros por exemplo, irá enviar para um determinado local. Lembrando que o processo depende de uma terceira linguagem, como ASP, PHP ou JAVA servidor.
 
-- Autocomplete="on/off" é uma propriedade que habilita ou desabilita a função do autocomplemento do palavra no input tipo texto (type="text")
+- Autocomplete="on/off" é uma propriedade que habilita ou desabilita a função do autocomplemento do palavra no input tipo texto (type="text"), a também a utilização especificando cada input, 
 
 _________________________________________________________________________________
 
@@ -18,5 +18,55 @@ ________________________________________________________________________________
 
 O que é Label?
 
-Label é uma etiqueta, que tem como seu trabalho interligar (associar) um determinado input com o valor inputado, onde os valores deles sejam associados. Sua sintáxe, com exemplo "Nome:".:
-        <label for="VALOR-DO-ID-ATRELADO-AO-(Nome)">Nome:</label>
+Label é uma etiqueta, que tem como seu trabalho interligar (associar) um determinado input com o valor inputado, onde os valores deles sejam associados, pela propriedade (for="id"). Sua sintáxe, com exemplo "Nome:".:
+        <label for="INOME">Nome:</label>
+        <input type="text" name="nome" id="INOME">
+_________________________________________________________________________________  
+Existe dois métodos de envio de formulário,
+    1°- Este que utilizamos no exemplo "form001.html". É o método chamado de "GET", que é o padrão, identificando-o a partir de uma propriedade (method="get"), Salientando que é dentro do label.
+    Aplicação: É mais recomendado para dados que não sejam sensíveis. Exemplo, pesquisas. 
+        
+        --Observação: Os dados de envio via "get" não pode ultrapassar os 3 mil bytes - (+/- 3 mil letras)
+
+
+    2° - E o (method="post"), que a principal diferença é a não demonstração do cadastro na URL do navegador.
+    Aplicação: Utilizados para dados sensíveis [senha, n° de cartão de crédito (embora que tenha que trabalhar com https)], envio de imagens ou qualquer outro tipo de arquivo.
+
+        --Observação: Pode ser usada para arquivos com mais de 3 mil bytes
+_________________________________________________________________________________
+                                    **DICAS**
+UTILIZAÇÃO DO "required", É MUITO IMPORTANTE, para quando o usuário não informar nenhum texto no input, aparecerá uma notificação exigindo o preenchimento do campo. Basta adicionar o "required" no fim do comando input, conforme o exemplo abaixo.
+
+**<input type="text" name="usu" id="iusu" required>**
+
+Assim, possibilita também um RANGE em n° de letras (caracteres), especificando com, minlength="" para n° mínimo / maxlength="" para n° máximo, conforme abaixo;
+
+**<input type="text" name="usu" id="iusu" required minlength="5" maxlength="12">**
+
+E também, especeficar o tamanho da caixa de inputs em n° de caracteres que irá mostrar, mas não limita o n° de caracteres, especificando com o "size" no fim do comando do input, conforme abaixo:
+
+**<input type="text" name="usu" id="iusu" required minlength="5" maxlength="12" size="8">** - Irá mostrar apenas 8 caracteres dos 12 permitidos.
+
+Uma outra dica muito boa, é a utilização do placeholder="", que apresenta algo que queira dentro da caixa de texto do input, no momento que digitar o primeiro caracter irá sumir.
+
+**<input type="text" name="usu" id="iusu" required minlength="5" maxlength="12" size="8" placeholder="Digite o usuário">**
+
+Por fim, pode-se especificar a cada input um autocomplete determinado, exemplo de autocomplete apenas para usuário, para senhas atuais ou novas, e tantos outros, basta especifica-lo dentro da TAG do input qual autocomplete irá especifica-lo, Salientando que no <form> deve está com o autocomplete="on", conforme exemplo abaixo;
+
+<form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+    <label for="iusu">Usuário</label>
+    <input type="text" name="usu" id="iusu" required minlength="5" maxlength="12" size="8" placeholder="Digite o usuário" autocomplete="username">
+    </p>
+</form>
+_________________________________________________________________________________
+
+Controles de Formulário
+Para criar caixas de input's;
+
+    Textos: <input type="text" name="" id="">
+    Senhas: <input type="password" name="" id="">
+    Botão de enviar / submissão: <input type="submit" value="Enviar">
+    Botão para limpar a caixa:   <input type="reset" value="Limpar">
+
+
