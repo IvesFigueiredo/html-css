@@ -35,23 +35,23 @@ Existe dois métodos de envio de formulário,
         --Observação: Pode ser usada para arquivos com mais de 3 mil bytes
 _________________________________________________________________________________
                                     **DICAS**
-UTILIZAÇÃO DO "required", É MUITO IMPORTANTE, para quando o usuário não informar nenhum texto no input, aparecerá uma notificação exigindo o preenchimento do campo. Basta adicionar o "required" no fim do comando input, conforme o exemplo abaixo.
+- UTILIZAÇÃO DO "required", É MUITO IMPORTANTE, para quando o usuário não informar nenhum texto no input, aparecerá uma notificação exigindo o preenchimento do campo. Basta adicionar o "required" no fim do comando input, conforme o exemplo abaixo.
 
 **<input type="text" name="usu" id="iusu" required>**
 
-Assim, possibilita também um RANGE em n° de letras (caracteres), especificando com, minlength="" para n° mínimo / maxlength="" para n° máximo, conforme abaixo;
+- Assim, possibilita também um RANGE em n° de letras (caracteres), especificando com, minlength="" para n° mínimo / maxlength="" para n° máximo, conforme abaixo;
 
 **<input type="text" name="usu" id="iusu" required minlength="5" maxlength="12">**
 
-E também, especeficar o tamanho da caixa de inputs em n° de caracteres que irá mostrar, mas não limita o n° de caracteres, especificando com o "size" no fim do comando do input, conforme abaixo:
+- E também, especeficar o tamanho da caixa de inputs em n° de caracteres que irá mostrar, mas não limita o n° de caracteres, especificando com o "size" no fim do comando do input, conforme abaixo:
 
 **<input type="text" name="usu" id="iusu" required minlength="5" maxlength="12" size="8">** - Irá mostrar apenas 8 caracteres dos 12 permitidos.
 
-Uma outra dica muito boa, é a utilização do placeholder="", que apresenta algo que queira dentro da caixa de texto do input, no momento que digitar o primeiro caracter irá sumir.
+- Uma outra dica muito boa, é a utilização do placeholder="", que apresenta algo que queira dentro da caixa de texto do input, no momento que digitar o primeiro caracter irá sumir.
 
 **<input type="text" name="usu" id="iusu" required minlength="5" maxlength="12" size="8" placeholder="Digite o usuário">**
 
-Por fim, pode-se especificar a cada input um autocomplete determinado, exemplo de autocomplete apenas para usuário, para senhas atuais ou novas, e tantos outros, basta especifica-lo dentro da TAG do input qual autocomplete irá especifica-lo, Salientando que no <form> deve está com o autocomplete="on", conforme exemplo abaixo;
+- Por fim, pode-se especificar a cada input um autocomplete determinado, exemplo de autocomplete apenas para usuário, para senhas atuais ou novas, e tantos outros, basta especifica-lo dentro da TAG do input qual autocomplete irá especifica-lo, Salientando que no <form> deve está com o autocomplete="on", conforme exemplo abaixo;
 
 <form action="cadastro.php" method="post" autocomplete="on">
     <p>
@@ -59,6 +59,13 @@ Por fim, pode-se especificar a cada input um autocomplete determinado, exemplo d
     <input type="text" name="usu" id="iusu" required minlength="5" maxlength="12" size="8" placeholder="Digite o usuário" autocomplete="username">
     </p>
 </form>
+
+-   Utilização em NUMEROS
+        1°- Utilização dos mínimos (min) e máximos (max) para definir um range de números que serão aceitos.
+        2°- Utilização do step (passo), define a habilitação de um número decimal, e de quanto em quanto é esse "step" se é de 0,2-0,2 ou 0,5-0,5. Tudo já pré-estabelecido. Conforme abaixo:
+
+    <label for="imedia">Média</label>
+    <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.5"> 
 _________________________________________________________________________________
 
 Controles de Formulário
@@ -66,6 +73,11 @@ Para criar caixas de input's;
 
     Textos: <input type="text" name="" id="">
     Senhas: <input type="password" name="" id="">
+    Números: <input type="number" name="" id="">
+    Mês: <input type="month" name="mes" id="imes" value="2023-01">
+    Data: <input type="date" name="dia" id="idia" value="2023-01-30">
+    Hora: <input type="time" name="prova" id="iprova" value="13:30">
+    
     Botão de enviar / submissão: <input type="submit" value="Enviar">
     Botão para limpar a caixa:   <input type="reset" value="Limpar">
 
