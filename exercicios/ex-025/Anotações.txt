@@ -73,6 +73,9 @@ ________________________________________________________________________________
 - Checkbox
     Apenas abre uma caixa de marcação.
     Pode por name="" (nomes) diferentes.
+
+- File
+    Para utilizar o input FILE, para envio de arquivo, é necessário usar o método de formulário "POST".
 _________________________________________________________________________________
 
 Controles de Formulário
