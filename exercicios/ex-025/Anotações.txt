@@ -66,6 +66,13 @@ ________________________________________________________________________________
 
     <label for="imedia">Média</label>
     <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.5"> 
+
+- Radio
+    Importante lembrar em deixar o name="" com o mesmo nome, assim define que estão correlacionados, assim quando marcar um automaticamente o outro é desmarcado.
+
+- Checkbox
+    Apenas abre uma caixa de marcação.
+    Pode por name="" (nomes) diferentes.
 _________________________________________________________________________________
 
 Controles de Formulário
@@ -77,7 +84,9 @@ Para criar caixas de input's;
     Mês: <input type="month" name="mes" id="imes" value="2023-01">
     Data: <input type="date" name="dia" id="idia" value="2023-01-30">
     Hora: <input type="time" name="prova" id="iprova" value="13:30">
-    
+    Radio: <input type="radio" name="" id="" checked>
+    Checkbox: <input type="checkbox" name="" id="" checked>
+
     Botão de enviar / submissão: <input type="submit" value="Enviar">
     Botão para limpar a caixa:   <input type="reset" value="Limpar">
 
