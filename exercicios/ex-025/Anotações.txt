@@ -109,5 +109,7 @@ ____________________________________________________________________________
 
 - No mesmo sentido no que ocorre quando devemos utilizar o método "POST" para carregamento de arquivo, devemos também utilizar o método "POST" quando utilizamos o "textarea", pela possibilidade do conteúdo possuir mais de 3000 caracteres.
 
+____________________________________________________________________________________
 
+- Output: O output não tem como função enviar dados, apenas mostrar na interface.
 
