@@ -4,7 +4,7 @@
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios
 
 Projetos próprio ainda em contrução:
-Projeto (Estudos) - ( https://ivesfigueiredo.github.io/linguagem/PP-Index.html )
+Projeto (Estudos) - ( https://ivesfigueiredo.github.io/projetos-pessoais/PP-Index.html )
 
 Projeto Cordel: ( https://ivesfigueiredo.github.io/projeto-cordel/ )
 
