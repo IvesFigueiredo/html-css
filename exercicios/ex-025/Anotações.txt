@@ -76,7 +76,7 @@ ________________________________________________________________________________
 
 - File
     Para utilizar o input FILE, para envio de arquivo, é necessário usar o método de formulário "POST".
-_________________________________________________________________________________
+____________________________________________________________________________
 
 Controles de Formulário
 Para criar caixas de input's;
@@ -92,5 +92,22 @@ Para criar caixas de input's;
 
     Botão de enviar / submissão: <input type="submit" value="Enviar">
     Botão para limpar a caixa:   <input type="reset" value="Limpar">
+ 
+                    //________________________________________\\
+
+Controles de Formulários
+Sem a utilização de inputs
+
+        Select: <select name="estado" id="iest">
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+        Datalist: <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Advogado</option>
+        Textarea: <textarea name="msg" id="imsg" cols="40" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
+____________________________________________________________________________
+
+- No mesmo sentido no que ocorre quando devemos utilizar o método "POST" para carregamento de arquivo, devemos também utilizar o método "POST" quando utilizamos o "textarea", pela possibilidade do conteúdo possuir mais de 3000 caracteres.
+
 
 
