@@ -2,6 +2,6 @@
 
 Media Query é um processo que visa uma otimização de recursos, sendo aplicado a interfaces, melhorando assim a experiência do usuário, por exemplo nas diferentes telas de dispositivos, também age na mudança de formatação em telas e conteúdo impresso e outros.
 
-Para desenvolver uma WEB para objetivos diferentes, CHAMADOS DE "TYPES" -TIPOS - (TELA e IMPRESSORA), devemos trabalhar com CSS, assim criando dois (02) links:CSS respectivos.
-    - Para a TELA usamos link:CSS <...href="tela.css" media="screen">
-    - Para a IMPRESSORA usamos link:CSS <...href="impressora.css" media="print">
+    Para desenvolver uma WEB para objetivos diferentes, CHAMADOS DE "TYPES" -TIPOS - (TELA e IMPRESSORA), devemos trabalhar com CSS, assim criando dois (02) links:CSS respectivos.
+        - Para a TELA usamos link:CSS <...href="tela.css" media="screen">
+        - Para a IMPRESSORA usamos link:CSS <...href="impressora.css" media="print">
