@@ -1,7 +1,23 @@
-                                Media Queries
+                                Media Queries = Media Types + Media Features
+
+        Media Types
 
 Media Query é um processo que visa uma otimização de recursos, sendo aplicado a interfaces, melhorando assim a experiência do usuário, por exemplo nas diferentes telas de dispositivos, também age na mudança de formatação em telas e conteúdo impresso e outros.
 
     Para desenvolver uma WEB para objetivos diferentes, CHAMADOS DE "TYPES" -TIPOS - (TELA e IMPRESSORA), devemos trabalhar com CSS, assim criando dois (02) links:CSS respectivos.
         - Para a TELA usamos link:CSS <...href="tela.css" media="screen">
         - Para a IMPRESSORA usamos link:CSS <...href="impressora.css" media="print">
+
+___________________________________________________________________________________________
+
+        Media Features 
+
+Media Features, são basicamente caracteristica de media, caracteristicas de tela, pois dependem do tamanho de diferentes telas. 
+    Suas caracteristicas são, modo retrato (portrait) e modo paisagem (landscape), para que o comando seja compreendido a Media Feature deve ser inserida juntamente com o Media Type, porém entre parênteses. Conforme o exemplo abaixo:
+
+<link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+        <...href="estilos/retrato.css" media="screen and (orientation: portrait)">
+                   <...media="screen and (orientation: portrait)">
+                        <...and (orientation: portrait)">
+
+    Perceba a Media Feature inserida dentro do parênteses "(orientation: portrait)", e a utilização do "and", pois além de informar o tipo de Media informamos também a caracteristica, logo, Media Type e (and) Media Feature. Se tivermos 03 Media Features, utilizaremos 03 parênteses.  
