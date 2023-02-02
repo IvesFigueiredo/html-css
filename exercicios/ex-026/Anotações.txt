@@ -21,3 +21,5 @@ Media Features, são basicamente caracteristica de media, caracteristicas de tel
                         <...and (orientation: portrait)">
 
     Perceba a Media Feature inserida dentro do parênteses "(orientation: portrait)", e a utilização do "and", pois além de informar o tipo de Media informamos também a caracteristica, logo, Media Type e (and) Media Feature. Se tivermos 03 Media Features, utilizaremos 03 parênteses.  
+
+Ou seja, a Media Feuture serve para configurarmos a mesma página WEB com configurações diferentes. Uma das formas é se baseando com a orientação dos dispositivos.
