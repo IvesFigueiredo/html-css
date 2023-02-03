@@ -23,3 +23,18 @@ Media Features, são basicamente caracteristica de media, caracteristicas de tel
     Perceba a Media Feature inserida dentro do parênteses "(orientation: portrait)", e a utilização do "and", pois além de informar o tipo de Media informamos também a caracteristica, logo, Media Type e (and) Media Feature. Se tivermos 03 Media Features, utilizaremos 03 parênteses.  
 
 Ou seja, a Media Feuture serve para configurarmos a mesma página WEB com configurações diferentes. Uma das formas é se baseando com a orientação dos dispositivos.
+
+______________________________________________________________________________________________________
+
+Tipos de conformação:
+
+Sabemos que existe para impressão, e diferentes telas, no exercicio mq004 aplicamos os conhecimentos para transformar uma página web em diferentes dispositivos CELULAR, TABLET, LAPTOP, E TELAS GRANDES (TV), como também formas para impressão. Aplicando;
+
+@media screen e @media print
+
+Para diferentes telas aplicamos; 
+    @media screen and (max-width: 600px) para telas até 600px de largura
+    @media screen and (min-width: 600px) and (max-width: 768px) para telas entre 600px até 768px
+            LEMBRANDO QUE O AND E ENTRE PARÊNTESES "()" DESIGNA A MEDIA FEATURES, apartir daí aplicar as configuração desejadas para cada tamanho de tela. (body, main, h1, img, fontes, e mais)
+
+    @media print { Seguiu o mesmo principio das "@media screen", mas boltado a impressão.
