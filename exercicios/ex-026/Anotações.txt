@@ -46,6 +46,7 @@ Para diferentes telas aplicamos;
     Primeiramente é necessário nomear a classe em que queremos trabalhar, no caso do exemplo foi o "menu", logo, nomeamos com o id="itens".
 
     Segundo, criamos uma condicionante para quando clicarmos no ícone que será condicionado com /onclick="clickMenu()"/ :
+
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
 
     Terceiro, utilizaremos o id nomeado "itens" da classe <menu id="itens">... em um script pós main. Em uma função /itens.style.display == 'block'/.
@@ -66,3 +67,25 @@ Para diferentes telas aplicamos;
         </script>
 
         Ou seja, esse comando significa que, se o "itens" estiver com o display block, [aparecendo], ele receberá o comando de display none [esconder]. Se não estiver nesta condição ele receberá o comando para o display block [Aparecer].
+
+======================================================================
+
+        Mas também, se atentar com uma ação que ocorre correqueiramente, que quando abrimos o menu (clicando) e fechando o menu (clicando novamente). O botão (icone do menu) some quando variamos o tamanho da tela (viewport). Para corrigir isso devemos desenvolver uma outra função. 
+
+        <script>
+                function onresize() {
+                        if (window.innerWidth >= 768) {
+                            itens.style.display = 'block'    
+                        } else{
+                                itens.style.display ='none'
+                        }
+                }
+        </script>
+
+        Ou seja, nesta função digo que:
+                + Para o tamanho (onresize) - temos o seguinte
+                + Se a largura interna da janela (window.innerWidth) for maior ou igual a 768, o icone do menu (itens.style.display) deve aparecer (block)
+                + Senão, o ícone do menu (itens.style.display) não deve aparecer (none).
+
+=======================================================================
+         
