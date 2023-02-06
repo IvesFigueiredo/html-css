@@ -38,3 +38,31 @@ Para diferentes telas aplicamos;
             LEMBRANDO QUE O AND E ENTRE PARÊNTESES "()" DESIGNA A MEDIA FEATURES, apartir daí aplicar as configuração desejadas para cada tamanho de tela. (body, main, h1, img, fontes, e mais)
 
     @media print { Seguiu o mesmo principio das "@media screen", mas boltado a impressão.
+
+    ________________________________________________________________________
+
+    Inserindo o JAVASCRIPT no html
+
+    Primeiramente é necessário nomear a classe em que queremos trabalhar, no caso do exemplo foi o "menu", logo, nomeamos com o id="itens".
+
+    Segundo, criamos uma condicionante para quando clicarmos no ícone que será condicionado com /onclick="clickMenu()"/ :
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+
+    Terceiro, utilizaremos o id nomeado "itens" da classe <menu id="itens">... em um script pós main. Em uma função /itens.style.display == 'block'/.
+        
+        *OBS: == significa igual
+              = significa recebe
+        
+        Então trabalharemos com a função IF e ELSE; logo
+
+        <script>
+                function clickMenu() {
+                        if (itens.style.display == 'block') {
+                            itens.style.display = 'none'
+                        } else {
+                                itens.style.display = 'block'
+                        }
+                }
+        </script>
+
+        Ou seja, esse comando significa que, se o "itens" estiver com o display block, [aparecendo], ele receberá o comando de display none [esconder]. Se não estiver nesta condição ele receberá o comando para o display block [Aparecer].
